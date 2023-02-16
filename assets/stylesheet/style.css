@@ -8,18 +8,17 @@ body {
     height: 100%;
 }
 
-body > footer {
-  position: sticky;
-  top: 100vh;
-}
-
-main {
-    
-}
-
-footer {
+body {
     padding: 2rem;
-    text-align: center;
+}
+
+body > footer {
+    position: sticky;
+    top: 100vh;
+}
+
+footer * {
+    color: #BDBDBD;
 }
 
 .grid-container {
@@ -27,6 +26,86 @@ footer {
     grid-template-columns: fit-content(300px) 1fr;
 }
 
+.header__text--style {
+    font-family: inconsolataCondensedBold;
+    font-size: 24px;
+    font-style: normal;
+    line-height: 25px;
+    line-height: 100%;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: -8%;
+}
+
+.text__style {
+    line-height: 100%;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: -3.5%;
+}
+
+.text__style--regular {
+    font-family: spaceMonoRegular;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.text__style--bold {
+    font-family: spaceMonoBold;
+    font-size: 64px;
+    line-height: 95px;
+}
+
+.button--style {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 24px 43px;
+}
+
+.button__text--style {
+    font-size: 14px;
+    line-height: 21px;
+}
+
 .text--uppercase {
     text-transform: uppercase;
+}
+
+.footer__text--style {
+    font-family: montserratRegular;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 17px;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.footer__logo--size {
+    height: 1.5rem;
+    width: 1.5rem;
+    vertical-align: middle;
+}
+
+@font-face {
+    font-family: inconsolataCondensedBold;
+    src: url(../fonts/Inconsolata/static/Inconsolata_Condensed/Inconsolata_Condensed-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: spaceMonoRegular;
+    src: url(../fonts/Space_Mono/SpaceMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: spaceMonoBold;
+    src: url(../fonts/Space_Mono/SpaceMono-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: montserratRegular;
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
