@@ -2,3 +2,31 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+html, 
+body { 
+    height: 100%;
+}
+
+body > footer {
+  position: sticky;
+  top: 100vh;
+}
+
+main {
+    
+}
+
+footer {
+    padding: 2rem;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: fit-content(300px) 1fr;
+}
+
+.text--uppercase {
+    text-transform: uppercase;
+}
